@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>TATUIZ||PAY</title>
+</head>
+
+<body>
+    <div class="payScreen">
+        <h1>Información de la Tarjeta</h1>
+        <div class="payContainer">
+            <form action="" class="payForm" id="#payForm">
+                <label for="">Nombre:</label>
+                <input type="text" placeholder="Nombre Completo" id="input-nombreT" />
+                <label for="">Número de tarjeta</label>
+                <input type="number" placeholder="#### #### #### ####" id="input-numeroT" />
+                <label for="">Expiración</label>
+                <input type="number" placeholder="**/**" id="input-expiracion" />
+                <label for="">Cvv</label>
+                <input type="number" placeholder="###" id="input-cvv" />
+                <div class="payFooter">
+                    <h3 class="productsQuantity2">Productos: 0</h3>
+                    <h3 class="total2">Total: €0</h3>
+                    <input type="submit" class="btn payBtn" id="payBtn2" value="Pagar" />
+                </div>
+            </form>
+            <div class="card">
+                <h2>#### #### #### ####</h2>
+                <h2>Nombre Del Propietario</h2>
+                <div class="cardInfo">
+                    <h3>**/**</h3>
+                    <h3>***</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SWEETALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="../carrito.js"></script> -->
+</body>
+
+</html>

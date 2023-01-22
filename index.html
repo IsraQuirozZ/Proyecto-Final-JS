@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>TATUIZ||INICIO</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <h2 class="logo">TATUIZ</h2>
+            </a>
+            <ul>
+                <li>
+                    <a href="#"><span>INICIO</span></a>
+                </li>
+                <li>
+                    <a href="pages/blog.html">BLOG</a>
+                </li>
+                <li>
+                    <a href="pages/citas.html">CITAS</a>
+                </li>
+                <li>
+                    <a href="pages/tienda.html">TIENDA</a>
+                </li>
+                <li>
+                    <a href="pages/carrito.html">CARRITO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/slider1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/slider2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="img/slider3.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="main">
+        <h1>El contenido de esta página estará disponible muy pronto</h1>
+        <p>Ir a sección Tienda para probar el simulador de compra</p>
+    </section>
+
+    <footer class="footer">
+        <h3>Contáctanos</h3>
+        <p>Mándanos un correo y te contactaremos lo más breve posible:</p>
+        <form action="" id="formContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Nombre" id="input-nombre" />
+            <label for="apellido">Apellido:</label>
+            <input type="text" placeholder="Apellido" id="input-apellido" />
+            <label for="email">Email:</label>
+            <input type="email" placeholder="ejemplo@hotmail.com" id="input-email" />
+            <input type="submit" id="input-submit" />
+        </form>
+    </footer>
+
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- SWEETALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --colorPrincipal: #222831;
+    --colorTerciario: #313b4b;
+    --colorSecundario: #d1aa6e;
+    --colorHover: #f05454;
+}
+
+
+/* NAVBAR */
+
+nav {
+    background-color: var(--colorPrincipal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    height: 70px;
+}
+
+.logo {
+    color: var(--colorHover);
+}
+
+.logo:hover {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+span {
+    color: #f05454;
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: var(--colorHover);
+    text-decoration: underline;
+    transition: all ease 0.3s;
+}
+
+
+/* SWIPER CARROUSEL */
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HOME */
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.footer {
+    background-color: #222831;
+    color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30%;
+}
+
+#input-submit {
+    margin-top: 10px;
+    width: 90px;
+    height: 40px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: inherit;
+}
+
+#input-submit:hover {
+    cursor: pointer;
+    background-color: var(--colorHover);
+}
+
+
+/* SHOP */
+
+.shopContainer {
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100vh;
+    border-right: 1px solid gray;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.filterForm {
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.button-value {
+    background-color: inherit;
+    color: var(--colorHover);
+    border: 2px solid var(--colorHover);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.button-value:hover {
+    cursor: pointer;
+    background-color: var(--colorHover);
+    color: white;
+}
+
+.active {
+    background-color: var(--colorHover);
+    color: white;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    background: inherit;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--colorHover);
+}
+
+.products {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.productsLayout {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.productContainer {
+    background-color: var(--colorPrincipal);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.productImg {
+    width: 40%;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.productInfo {
+    color: white;
+    width: 60%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productPriceDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* body {
+    position: relative;
+} */
+
+
+/* CARRITO */
+
+.cart {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.cartContainer {
+    margin-top: 20px;
+    /* background-color: skyblue; */
+    height: 80%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.productCard {
+    margin: 0 auto;
+    /* background-color: skyblue; */
+    border: 1px solid gray;
+    width: 700px;
+    height: 200px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.productCard img {
+    width: 30%;
+}
+
+.productCartInfo {
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productCartInfo h2 {
+    font-size: 40px;
+}
+
+.productCartInfo p {
+    font-size: 40px;
+}
+
+.cartInfo {
+    border: 1px solid gray;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.cartInfo h3 {
+    font-size: 25px;
+}
+
+.deleteAll,
+.deleteBtn,
+.payBtn {
+    border: 2px solid var(--colorHover);
+    color: var(--colorHover);
+    margin-top: 20px;
+}
+
+.deleteAll:hover {
+    border: 2px solid var(--colorHover);
+    color: white;
+}
+
+.payScreen {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.payScreen h1 {
+    font-size: 40px;
+}
+
+.payContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payForm {
+    width: 40%;
+    height: auto;
+    border: 1px solid var(--colorPrincipal);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    padding: 20px;
+}
+
+.payFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card {
+    width: 50%;
+    height: 300px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardInfo {
+    margin-top: 40px;
+    display: flex;
+    gap: 100px;
+}
+
+.card h2 {
+    font-size: 30px;
+}
+
+.card h3 {
+    font-size: 25px;
+}
