@@ -13,7 +13,7 @@
     <div class="payScreen">
         <h1>Información de la Tarjeta</h1>
         <div class="payContainer">
-            <form action="" class="payForm" id="#payForm">
+            <form action="" class="payForm" id="payForm">
                 <label for="">Nombre:</label>
                 <input type="text" placeholder="Nombre Completo" id="input-nombreT" />
                 <label for="">Número de tarjeta</label>
@@ -29,18 +29,19 @@
                 </div>
             </form>
             <div class="card">
-                <h2>#### #### #### ####</h2>
-                <h2>Nombre Del Propietario</h2>
+                <h2 class="numeroTarjeta">#### #### #### ####</h2>
+                <h2 class="nombreTarjeta">Nombre Del Propietario</h2>
                 <div class="cardInfo">
-                    <h3>**/**</h3>
-                    <h3>***</h3>
+                    <h3 class="expiracion">**/**</h3>
+                    <h3 class="cvv">***</h3>
                 </div>
             </div>
         </div>
+        <a href="carrito.html"><button class="btn deleteAll">Regresar</button></a>
     </div>
     <!-- SWEETALERT -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- <script src="../carrito.js"></script> -->
+    <script src="../pay.js"></script>
 </body>
 
 </html>

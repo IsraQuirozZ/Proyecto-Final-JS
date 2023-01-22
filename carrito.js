@@ -1,11 +1,11 @@
 let lSInfo = JSON.parse(localStorage.getItem("carrito"));
-let cantidad = 0;
-let totalAPagar = 0;
 
 // MOSTRAR CANTIDAD DE PRODUCTOS Y TOTAL
 function cartInfo(arr) {
     const productsQuantity = document.querySelector(".productsQuantity");
     const total = document.querySelector(".total");
+    let cantidad = 0;
+    let totalAPagar = 0;
     if (arr.length !== 0) {
         arr.forEach((product) => {
             cantidad++;
@@ -13,8 +13,10 @@ function cartInfo(arr) {
         });
         productsQuantity.textContent = `Productos: ${cantidad}`;
         total.textContent = `Total: €${totalAPagar}`;
+        localStorage.setItem("cantidadProductos", JSON.stringify(cantidad));
+        localStorage.setItem("totalAPagar", JSON.stringify(totalAPagar));
     } else {
-        productsQuantity.textContent = `Productos: 0`;
+        localStorage.productsQuantity.textContent = `Productos: 0`;
         total.textContent = `Total: €0`;
     }
 }
@@ -45,7 +47,6 @@ function deleteFromCart(arr) {
     deleteBtn.forEach((button) => {
         button.onclick = () => {
             const id = button.id.slice(11);
-            console.log(id);
             const filterProduct = arr.filter((product) => {
                 return product.id !== id;
             });

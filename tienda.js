@@ -124,12 +124,10 @@ function addToCart(arr) {
     productBtn.forEach((button) => {
         button.onclick = () => {
             const id = button.id.slice(11);
-            console.log(id);
             const filterProduct = arr.find((elemento) => {
                 return elemento.id === id;
             });
             carrito.push(filterProduct);
-            console.log(carrito);
             localStorage.setItem("carrito", JSON.stringify(carrito));
         };
     });
