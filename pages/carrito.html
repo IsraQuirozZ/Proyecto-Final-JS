@@ -40,11 +40,43 @@
         <div class="cartInfo">
             <h3 class="productsQuantity">Productos: 0</h3>
             <h3 class="total">Total: €0</h3>
-            <a href="pay.html"><button class="btn payBtn pay" id="payBtn">Pagar</button></a
-        >
-      </div>
-      <button class="btn deleteAll">Borrar Todo</button>
+            <!-- <a href="pay.html"><button class="btn payBtn pay" id="payBtn">Pagar</button></a -->
+            <button class="btn payBtn pay" id="payBtn">Pagar</button>
+        </div>
+        <button class="btn deleteAll">Borrar Todo</button>
     </div>
+    <div class="payScreen hidden">
+        <h1>Información de la Tarjeta</h1>
+        <div class="payContainer">
+            <form action="" class="payForm" id="payForm">
+                <label for="">Nombre:</label>
+                <input type="text" placeholder="Nombre Completo" id="input-nombreT" />
+                <label for="">Número de tarjeta</label>
+                <input type="number" placeholder="#### #### #### ####" id="input-numeroT" />
+                <label for="">Expiración</label>
+                <input type="number" placeholder="**/**" id="input-expiracion" />
+                <label for="">Cvv</label>
+                <input type="number" placeholder="###" id="input-cvv" />
+                <div class="payFooter">
+                    <h3 class="productsQuantity2">Productos: 0</h3>
+                    <h3 class="total2">Total: €0</h3>
+                    <input type="submit" class="btn payBtn" id="payBtn2" value="Pagar" />
+                </div>
+            </form>
+            <div class="card">
+                <h2 class="numeroTarjeta">#### #### #### ####</h2>
+                <h2 class="nombreTarjeta">Nombre Del Propietario</h2>
+                <div class="cardInfo">
+                    <h3 class="expiracion">**/**</h3>
+                    <h3 class="cvv">***</h3>
+                </div>
+            </div>
+        </div>
+        <a href="carrito.html"><button class="btn deleteAll">Regresar</button></a>
+    </div>
+    <!-- SWEETALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../carrito.js"></script>
-  </body>
+</body>
+
 </html>
